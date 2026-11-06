@@ -83,7 +83,9 @@ int main()
 			printf("Grades are = ");
 			for (int i = 0; i < index; i++)
 			{
-				printf("%f, ", grades[i]);
+				if (i > 0)
+					printf(", ");
+				printf("%.2f", grades[i]);
 			}
 			printf("\n");
 			break;
